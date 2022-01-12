@@ -1,5 +1,6 @@
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-ethers");
+require("@openzeppelin/hardhat-upgrades");
 require("./tasks/PrintAccounts");
 
 /**
@@ -17,12 +18,12 @@ module.exports = {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: BSCSCAN_API_KEY,
+    // apiKey: BSCSCAN_API_KEY,
   },
   solidity: {
     compilers: [
       {
-        version: "0.8.0",
+        version: "0.8.2",
       },
     ],
     settings: {
